@@ -1,14 +1,10 @@
-.toggle{
-  
+.toggle {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.toggle span{
- 
 
-}
-.toggle button{
+.toggle button {
   width: 50px;
   height: 24px;
   border-radius: 25px;
@@ -18,11 +14,10 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.toggle .circle{
+.toggle .circle {
   display: block;
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background:#5964e0 ;
-  
+  background: var(--color-violet);
 }

@@ -1,5 +1,5 @@
 .dashboard {
   width: 100%;
-  min-height: 100vh;
-  border: solid red;
+  min-height: calc( 100vh - 150px );
+  border: solid var(--color-violet);
 }
