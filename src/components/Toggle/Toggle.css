@@ -1,0 +1,28 @@
+.toggle{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle span{
+ 
+
+}
+.toggle button{
+  width: 50px;
+  height: 24px;
+  border-radius: 25px;
+  margin: 0 10px;
+  border: none;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.toggle .circle{
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background:#5964e0 ;
+  
+}
