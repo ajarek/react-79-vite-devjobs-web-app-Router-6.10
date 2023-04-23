@@ -1,0 +1,15 @@
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: #939bf4;
+}
+
+.card .info {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card .info span {
+  font-size: 1rem;
+}

@@ -1,5 +1,6 @@
 
 import jobsData from '../../assets/data.json';
+import Card from '../../components/Card/Card';
 import './Dashboard.css'
 
 
@@ -9,10 +10,8 @@ const Dashboard = () => {
     <div className='dashboard'>
     {  jobsData.map((job) =>{
       return(
-        <div key={job.id} className="cardJob">
-           <p>{job.company}</p>
-           <img src={job.logo} alt="lol" />
-        </div>
+       <Card key={job.id} {...job} />
+       
       )
     })}
      </div>
