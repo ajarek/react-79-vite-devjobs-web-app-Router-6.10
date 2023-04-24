@@ -25,6 +25,7 @@ body{
   margin: 0 auto;
   background-color: var(--background-color-app);
   color:var(--color-text) ;
+  --color-checkbox:var(--color-dark-grey);
   overflow: auto;
   transition: 0.2s linear;
 }

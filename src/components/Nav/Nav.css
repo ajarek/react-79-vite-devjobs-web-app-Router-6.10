@@ -1,5 +1,5 @@
 .nav{
-  height: 150px;
+  height: 162px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,4 +9,5 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--color-white);
+  position: relative;
 }

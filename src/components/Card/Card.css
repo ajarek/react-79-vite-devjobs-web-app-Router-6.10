@@ -1,15 +1,48 @@
 .card {
-  width: 200px;
-  height: 200px;
-  background-color: #939bf4;
+  width: 296px;
+  height: 296px;
+  background: var(--background-color-elements);
+  position: relative;
+  padding: 32px 16px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
 }
-
+.card .logo-card {
+  position: absolute;
+  top: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .card .info {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .card .info span {
   font-size: 1rem;
+}
+.card .info .dot {
+  margin: 4px 10px;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 100%;
+  background-color: var(--color-dark-grey);
+}
+.card .position {
+  font-size: 20px;
+  font-weight: 700;
+}
+.card .location {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-btn-2);
 }
