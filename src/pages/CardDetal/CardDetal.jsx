@@ -11,7 +11,7 @@ const CardDetal = () => {
   return (
     <div className='card-detal'>
       <div className="baner">
-        <div className="baner-logo">
+        <div className="baner-logo" style={{background:`${myObject.logoBackground}`}}>
           <img src={myObject.logo} alt="logo"  />
         </div>
         <div className="baner-position">

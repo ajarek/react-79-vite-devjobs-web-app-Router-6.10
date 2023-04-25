@@ -19,7 +19,6 @@
 .card-detal .baner .baner-logo {
   width: 140px;
   height: 143px;
-  background-color: var(--color-midnight);
   display: flex;
   justify-content: center;
   align-items: center;
