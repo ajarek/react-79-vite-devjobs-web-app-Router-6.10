@@ -15,7 +15,11 @@ const Error = () => {
           style={{
             border: '2px solid violet',
             marginTop: '1rem',
+            marginRight:'1rem',
             padding: '0 1rem',
+            fontSize: '1.3rem',
+            cursor:'pointer',
+            fontWeight: '500',
           }}
         >
           <span>Go Back 🔙</span>

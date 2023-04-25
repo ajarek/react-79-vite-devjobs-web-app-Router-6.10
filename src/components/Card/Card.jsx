@@ -2,9 +2,11 @@ import React from 'react'
 import './Card.css'
 const Card = (props) => {
 
-  const {postedAt,contract,logo,logoBackground,position,company,location} = props
+  const {postedAt,contract,logo,logoBackground,position,company,location,handleEdit} = props
+
+  
   return (
-    <div  className='card'>
+    <div  className='card'   onClick={handleEdit}>
       <div className="logo-card"
       style={{background:logoBackground}}
       >

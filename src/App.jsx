@@ -20,9 +20,12 @@ const router = createBrowserRouter([
       },
       {
         path: '/card-detal',
-        element: <CardDetal />,
         errorElement: <Error />,
-        children: []
+        children: [  {
+          path: ':id',
+          element:  <CardDetal />,
+          errorElement: <Error />,
+        },]
       },
    
     ],

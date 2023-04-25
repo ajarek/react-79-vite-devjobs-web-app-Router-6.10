@@ -1,0 +1,56 @@
+.card-detal {
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.card-detal .baner {
+  width: 660px;
+  height: 143px;
+  position: absolute;
+  top: -40px;
+  background-color: var(--background-color-elements);
+  display: flex;
+  justify-content: space-between;
+  padding-right: 24px;
+}
+.card-detal .baner .baner-logo {
+  width: 140px;
+  height: 143px;
+  background-color: var(--color-midnight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-detal .baner .baner-logo img {
+  width: 50%;
+  object-fit: cover;
+}
+.card-detal .baner-position {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.card-detal .company-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-detal .company-site .company-site-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 140px;
+  height: 50px;
+  background: var(--background-color-btn-2-hover);
+  color: var(--color-text);
+  border-radius: 5px;
+}
+.card-detal .company-site .company-site-link:hover {
+  background-color: var(--color-light-violet);
+  color: var(--color-white);
+}
