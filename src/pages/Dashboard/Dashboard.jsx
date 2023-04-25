@@ -2,13 +2,22 @@ import { React, useState, useContext, useEffect } from 'react'
 import { AppContext } from '../../App'
 import jobsData from '../../assets/data.json'
 import Card from '../../components/Card/Card'
+import Search from '../../components/Search/Search'
 import './Dashboard.css'
 
 const Dashboard = () => {
   const { formData, setFormData } = useContext(AppContext)
-
+ 
+ const handleForm=(e)=>{
+  e.preventDefault()
+  setFormData({title:e.target[0].value,location:e.target[1].value, fullTime:e.target[2].checked});
+  e.target[0].value=''
+  e.target[1].value=''
+  e.target[2].checked=false
+ }
   return (
     <div className='dashboard'>
+       <Search onSubmit={handleForm}/>
       {jobsData
         .filter((item) =>
           item.location.toLowerCase().includes(formData.location.toLowerCase())

@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Main from './layouts/Main/Main'
 import Error from './pages/Error/Error'
 import Dashboard from './pages/Dashboard/Dashboard'
+import CardDetal from './pages/CardDetal/CardDetal'
 
 export const AppContext = createContext()
 
@@ -17,9 +18,16 @@ const router = createBrowserRouter([
         element: <Dashboard />,
         errorElement: <Error />,
       },
+      {
+        path: '/card-detal',
+        element: <CardDetal />,
+        errorElement: <Error />,
+        children: []
+      },
    
     ],
   },
+  
 ])
 
 
