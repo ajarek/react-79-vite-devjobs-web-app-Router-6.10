@@ -9,7 +9,7 @@ const Toggle = () => {
     <div className='toggle'>
       <span>
         <img
-          src='src\assets\desktop\icon-sun.svg'
+          src='/src/assets/desktop/icon-sun.svg'
           alt=''
         />
       </span>
@@ -20,7 +20,7 @@ const Toggle = () => {
       </button>
       <span>
         <img
-          src='src\assets\desktop\icon-moon.svg'
+          src='/src/assets/desktop/icon-moon.svg'
           alt=''
         />
       </span>

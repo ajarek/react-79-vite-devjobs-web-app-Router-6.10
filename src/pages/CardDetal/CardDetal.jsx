@@ -24,7 +24,7 @@ const CardDetal = () => {
           <p>{myObject.website}</p>
         </div>
         <div className='company-site'>
-          <Link className='company-site-link'>Company Site</Link>
+          <a href={myObject.website} target='_blank' className='company-site-link'>Company Site</a>
         </div>
       </div>
       <div className='article'>
@@ -36,7 +36,7 @@ const CardDetal = () => {
         <div className='position-article'>
           <h1>{myObject.position}</h1>
           <div className='button-apply'>
-            <Link className='apply-link'>Apply Now</Link>
+            <a href={myObject.apply} target='_blank' className='apply-link'>Apply Now</a>
           </div>
         </div>
         <div className='location-article'>{myObject.location}</div>
@@ -63,7 +63,7 @@ const CardDetal = () => {
         <div className='position-article'>
           <h1 style={{fontSize:'16px'}}>{myObject.position}</h1>
           <div className='button-apply'>
-            <Link className='apply-link'>Apply Now</Link>
+            <a a href={myObject.apply} target='_blank' className='apply-link'>Apply Now</a>
           </div>
         </div>
         <div className='location-article'>{myObject.company}</div>
