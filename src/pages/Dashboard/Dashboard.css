@@ -8,3 +8,13 @@
   padding:120px 120px 40px 120px;
   position: relative;
 }
+@media (max-width:1051px) {
+  .dashboard{
+    padding:200px 120px 40px 120px;
+  }
+}
+@media (max-width:570px) {
+  .dashboard{
+    padding:200px 5px 40px 5px;
+  }
+}

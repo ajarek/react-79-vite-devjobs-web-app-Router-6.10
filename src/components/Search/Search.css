@@ -11,6 +11,7 @@
   overflow: hidden;
 }
 .search div {
+  width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -27,8 +28,8 @@ position: relative;
   color: var(--color-text);
 }
 .search .filter-full-time{
+  display: flex;
   justify-content: flex-start;
-  padding-left: 10px;
 }
 .search div input[type="checkbox"] {
   width: 20px;
@@ -67,4 +68,32 @@ position: relative;
 }
 .search .button-submit button:hover{
   background: var(--color-light-violet);
+}
+@media (max-width:1051px) {
+  .search{
+    width: 100%;
+    min-height:140px;
+     grid-template-columns: 1fr   ;
+     border-radius: 0;
+     top: 0;
+  }
+  .search div{
+    justify-content: flex-start;
+    
+  }
+  .search div input{
+   width:90%;
+   
+   margin-left: 50px;
+   margin-right: 20px;
+  }
+  .search .button-submit{
+    width: 100px;
+    height: 35px;
+    top: 87%;
+    
+  }
+  .search .filter-full-time input{
+    margin-left: 15px;
+  }
 }

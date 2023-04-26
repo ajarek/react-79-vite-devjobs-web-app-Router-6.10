@@ -51,6 +51,7 @@
   font-size: 1rem;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
+  margin: 16px 0;
 }
 .card-detal .company-site .company-site-link:hover,.position-article .apply-link:hover {
   background-color: var(--color-light-violet);
@@ -86,6 +87,7 @@
 .position-article{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -113,4 +115,35 @@
 }
 .role-article .items-article li{
   list-style-type:decimal;
+}
+@media (max-width:1051px) {
+  .card-detal .baner{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+   top: 0px;
+  }
+  .card-detal .baner-position {
+    align-items: center;
+    text-align: center;
+  }
+  .article{
+   width: 100%;
+    padding:150px 16px 20px 16px;
+    
+  }
+  .position-article,.location-article{
+    text-align: center;
+    justify-content: center;
+  }
+  .card-detal .company-site .company-site-link,.position-article .apply-link ,.role-link {
+    margin-left: 16px;
+  }
+
+}
+@media (max-width:560px) {
+  .card-detal .company-site .company-site-link,.position-article .apply-link ,.role-link {
+    margin-left: 0px;
+  }
 }
