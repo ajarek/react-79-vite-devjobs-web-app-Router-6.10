@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import './Toggle.css'
+import imageSun from '../../assets/desktop/icon-sun.svg'
+import imageMoon from '../../assets/desktop/icon-moon.svg'
 const Toggle = () => {
   const [theme, setTheme] = useState('light')
   useEffect(() => {
@@ -9,7 +11,7 @@ const Toggle = () => {
     <div className='toggle'>
       <span>
         <img
-          src='/src/assets/desktop/icon-sun.svg'
+          src={imageSun}
           alt=''
         />
       </span>
@@ -23,7 +25,7 @@ const Toggle = () => {
       </button>
       <span>
         <img
-          src='/src/assets/desktop/icon-moon.svg'
+          src={imageMoon}
           alt=''
         />
       </span>

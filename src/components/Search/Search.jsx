@@ -1,6 +1,7 @@
 import React from 'react'
 import './Search.css'
-
+import imageSearch from '../../assets/desktop/icon-search.svg'
+import imageLocation from '../../assets/desktop/icon-location.svg'
 const Search = ({ onSubmit }) => {
   return (
     <form
@@ -10,7 +11,7 @@ const Search = ({ onSubmit }) => {
       <div className='filter-title'>
         <div className='icon'>
           <img
-            src='/src/assets/desktop/icon-search.svg'
+            src={imageSearch}
             alt='icon'
           />
         </div>
@@ -23,7 +24,7 @@ const Search = ({ onSubmit }) => {
       <div className='filter-location'>
         <div className='icon'>
           <img
-            src='/src/assets/desktop/icon-location.svg'
+            src={imageLocation}
             alt='icon'
           />
         </div>
