@@ -1,12 +1,12 @@
 import React from 'react'
-import { redirect, useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import jobsData from '../../assets/data.json'
 import './CardDetal.css'
 
 const CardDetal = () => {
   let { id } = useParams()
   const myObject = jobsData.find((obj) => obj.id === +id)
-  
+
   return (
     <div className='card-detal'>
       <div className='baner'>
@@ -24,7 +24,13 @@ const CardDetal = () => {
           <p>{myObject.website}</p>
         </div>
         <div className='company-site'>
-          <a href={myObject.website} target='_blank' className='company-site-link'>Company Site</a>
+          <a
+            href={myObject.website}
+            target='_blank'
+            className='company-site-link'
+          >
+            Company Site
+          </a>
         </div>
       </div>
       <div className='article'>
@@ -36,7 +42,13 @@ const CardDetal = () => {
         <div className='position-article'>
           <h1>{myObject.position}</h1>
           <div className='button-apply'>
-            <a href={myObject.apply} target='_blank' className='apply-link'>Apply Now</a>
+            <a
+              href={myObject.apply}
+              target='_blank'
+              className='apply-link'
+            >
+              Apply Now
+            </a>
           </div>
         </div>
         <div className='location-article'>{myObject.location}</div>
@@ -56,14 +68,28 @@ const CardDetal = () => {
           <div className='content-article'>{myObject.role.content}</div>
           <ol className='items-article'>
             {myObject.role.items.map((el, index) => {
-              return <li key={index}>{el}</li>
+              return (
+                <li
+                  className='ol-li'
+                  key={index}
+                >
+                  {el}
+                </li>
+              )
             })}
           </ol>
         </div>
         <div className='position-article'>
-          <h1 style={{fontSize:'16px'}}>{myObject.position}</h1>
+          <h1 style={{ fontSize: '16px' }}>{myObject.position}</h1>
           <div className='button-apply'>
-            <a a href={myObject.apply} target='_blank' className='apply-link'>Apply Now</a>
+            <a
+              a
+              href={myObject.apply}
+              target='_blank'
+              className='apply-link'
+            >
+              Apply Now
+            </a>
           </div>
         </div>
         <div className='location-article'>{myObject.company}</div>

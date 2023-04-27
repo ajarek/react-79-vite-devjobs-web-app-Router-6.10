@@ -1,23 +1,23 @@
-.search{
+.search {
   width: 1013px;
   height: 80px;
-  background-color:var( --background-color-elements) ;
-  color: var( --color-text);
+  background-color: var(--background-color-elements);
+  color: var(--color-text);
   position: absolute;
-  top:-40px;
+  top: -40px;
   border-radius: 15px;
   display: grid;
-  grid-template-columns:1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   overflow: hidden;
 }
 .search div {
   width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.search div input{
+.search div input {
   width: 226px;
   height: 40px;
   padding: 0 8px;
@@ -27,11 +27,11 @@ position: relative;
   background-color: transparent;
   color: var(--color-text);
 }
-.search .filter-full-time{
+.search .filter-full-time {
   display: flex;
   justify-content: flex-start;
 }
-.search div input[type="checkbox"] {
+.search div input[type='checkbox'] {
   width: 20px;
   height: 20px;
   display: flex;
@@ -40,24 +40,24 @@ position: relative;
   margin-right: 10px;
   background-color: var(--color-checkbox);
 }
-.search .icon{
+.search .icon {
   width: 40px;
   height: 40px;
   position: absolute;
   left: 15px;
 }
-.search .button-submit{
+.search .button-submit {
   width: 140px;
   height: 52px;
- position: absolute;
- right: 10px;
- top: 50%;
- transform: translateY(-50%);
- color: var(--color-white);
- border-radius: 8px;
- overflow: hidden;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-white);
+  border-radius: 8px;
+  overflow: hidden;
 }
-.search .button-submit button{
+.search .button-submit button {
   width: 100%;
   height: 100%;
   background: var(--color-violet);
@@ -66,34 +66,32 @@ position: relative;
   border: none;
   cursor: pointer;
 }
-.search .button-submit button:hover{
+.search .button-submit button:hover {
   background: var(--color-light-violet);
 }
-@media (max-width:1051px) {
-  .search{
+@media (max-width: 1051px) {
+  .search {
     width: 100%;
-    min-height:140px;
-     grid-template-columns: 1fr   ;
-     border-radius: 0;
-     top: 0;
+    min-height: 140px;
+    grid-template-columns: 1fr;
+    border-radius: 0;
+    top: 0;
   }
-  .search div{
+  .search div {
     justify-content: flex-start;
-    
   }
-  .search div input{
-   width:90%;
-   
-   margin-left: 50px;
-   margin-right: 20px;
+  .search div input {
+    width: 90%;
+
+    margin-left: 50px;
+    margin-right: 20px;
   }
-  .search .button-submit{
+  .search .button-submit {
     width: 100px;
     height: 35px;
     top: 87%;
-    
   }
-  .search .filter-full-time input{
+  .search .filter-full-time input {
     margin-left: 15px;
   }
 }

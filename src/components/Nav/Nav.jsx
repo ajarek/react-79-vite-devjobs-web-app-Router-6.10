@@ -1,5 +1,4 @@
-import { React, useState, useContext, useEffect } from 'react'
-import { AppContext } from '../../App'
+import { React } from 'react'
 import Logo from '../../components/Logo/Logo'
 import Toggle from '../../components/Toggle/Toggle'
 

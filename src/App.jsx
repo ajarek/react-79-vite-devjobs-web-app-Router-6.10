@@ -21,33 +21,31 @@ const router = createBrowserRouter([
       {
         path: '/card-detal',
         errorElement: <Error />,
-        children: [  {
-          path: ':id',
-          element:  <CardDetal />,
-          errorElement: <Error />,
-        },]
+        children: [
+          {
+            path: ':id',
+            element: <CardDetal />,
+            errorElement: <Error />,
+          },
+        ],
       },
-   
     ],
   },
-  
 ])
-
-
 
 function App() {
   const [formData, setFormData] = useState({
     title: '',
     location: '',
-    fullTime: null
-  });
+    fullTime: null,
+  })
 
   return (
-  <div className="App">
-   <AppContext.Provider value={{formData, setFormData}}>
-   <RouterProvider router={router} />
-   </AppContext.Provider>
-  </div>
+    <div className='App'>
+      <AppContext.Provider value={{ formData, setFormData }}>
+        <RouterProvider router={router} />
+      </AppContext.Provider>
+    </div>
   )
 }
 

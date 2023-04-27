@@ -5,7 +5,10 @@ const Logo = () => {
   return (
     <div className='logo'>
       <Link to={'/'}>
-      <img src="/src/assets/desktop/logo.svg" alt="" />
+        <img
+          src='/src/assets/desktop/logo.svg'
+          alt=''
+        />
       </Link>
     </div>
   )

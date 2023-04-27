@@ -1,4 +1,4 @@
-.nav{
+.nav {
   height: 162px;
   display: flex;
   align-items: center;
@@ -11,8 +11,8 @@
   color: var(--color-white);
   position: relative;
 }
-@media (max-width:1051px) {
-  .nav{
+@media (max-width: 1051px) {
+  .nav {
     padding: 0 20px;
     height: 100px;
   }

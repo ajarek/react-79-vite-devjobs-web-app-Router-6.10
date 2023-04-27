@@ -13,8 +13,11 @@ const Toggle = () => {
           alt=''
         />
       </span>
-      <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-              style={theme === 'light'?{paddingLeft:'5px'}:{paddingLeft:'26px'}}
+      <button
+        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+        style={
+          theme === 'light' ? { paddingLeft: '5px' } : { paddingLeft: '26px' }
+        }
       >
         <span className='circle'></span>
       </button>
